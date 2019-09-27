@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="book.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet"> 
+  <title>Book</title>
+
+
+</head>
+
+<body>
+  <script src="book.js"></script>
+
+  <section id="library">
+      <h1>My Library</h1>
+      <div id="books"></div>
+  </section>
+
+  <section id="addBook">
+    <button onclick="toggleForm()">New Book</button>
+    <div id="newBookForm" style="display: none">
+      <label>Title:</label> <input type="text" id="title"> 
+      <label>Author:</label> <input type="text" id="author"> 
+      <label>Pages:</label> <input type="text" id="pages"> 
+      <label>Read?:</label> <input type="checkbox" id="read"> 
+      <button onclick="addBookToLibrary()">Add Book</button>
+    </div>
+  </section>
+</body>
+</html>
